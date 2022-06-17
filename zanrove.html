@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobil.css">
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width: 960px)">
+    <link
+      rel="stylesheet"
+      href="./css/PC.css"
+      media="screen and (min-width: 1350px)">
+    <title>Terénní seminář 2022</title>
+    <link rel="icon" type="image/x-icon" href="./ikony/sloth.svg">
+    <link rel="stylesheet" href="./lightGallery/dist/css/lightgallery-bundle.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="nazev"><a href ="./index.html" class="nazev__webu">Terénní seminář 2022</a></h1>
+            <nav>
+                <ul class="navigace">
+                    <li><a href ="./serie.html" class="navigace__polozka">Série</a></li>
+                    <li><a href ="./bestOf.html" class="navigace__polozka">Best of</a></li>
+                    <li><a href ="./zanrove.html" class="navigace__polozka">Žánrové</a></li>
+                    <li><a href ="./galerie.html" class="navigace__polozka">Galerie</a></li>
+                    <li><a href ="./oMne.html" class="navigace__polozka navigace__polozka--ikon">O mně</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <h2 class="heading-h2">Žánrové fotografie</h2>
+            <div class="zanrovka-box" id="my-galerie">
+                <div class="zanrovka">
+                    <figure class="zanrovka__foto">
+                        <a href="./Fotky/FULL/Pelantova_tema_krehka-krasa4.jpg">
+                            <img class="img-responsive" src="./Fotky/nahled320/Pelantova_tema_krehka-krasa.jpg" alt="Vřes">
+                        </a>
+                    </figure>
+                    <div class="zanrovka__text">
+                        <h3 class="heading-h3">Křehká krása</h3>
+                        <div class="zanrovka__p">
+                            <p>Pod pojmem křehká krása si představím kytičky a zvířátka. Během semináře jsem tedy vyfotila vřes, přesněji vřesovec.</p>
+                            <p>Šlo o&nbsp;zachycení barevného kontrastu bílého a fialového vřesu. Cílem bylo také ukázat jeho diagonální růst.</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="zanrovka zanrovka--fial">
+                    <figure class="zanrovka__foto zanrovka__foto--fial">
+                        <a href="./Fotky/FULL/Pelantova_tema_casy-minule4.jpg">
+                            <img class="img-responsive" src="./Fotky/nahled320/Pelantova_tema_casy-minule.jpg" alt="Dvojčata hledící do zrcadla">
+                        </a>
+                    </figure> 
+                    <div class="zanrovka__text zanrovka__text--fial">
+                        <h3 class="heading-h3">Časy minulé</h3>
+                        <div class="zanrovka__p zanrovka__p--fial">
+                            <p>Každý máme nějakou minulost, ať už hezkou či smutnou. Tato fotografie by měla symbolizovat vzpomínky na&nbsp;krásné časy a touhu v&nbsp;lepší zítřky.</p>
+                            <p>Cílem bylo osově zaznamenat skutečnost a odraz v&nbsp;zrcadle. A&nbsp;také vytvořit portrétní fotografii pro Anastasiiu a Oleksie.</p>
+                            <p>Tímto jim děkuji za&nbsp;možnost zveřejnění jejich fotografie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zanrovka">
+                    <figure class="zanrovka__foto zanrovka__foto--mal">
+                        <a href="./Fotky/FULL/Pelantova_tema_nekonecno4.jpg">
+                            <img class="img-responsive" src="./Fotky/nahled320/Pelantova_tema_nekonecno.jpg" alt="Tramvajová kolej linoucí se městem">
+                        </a>
+                    </figure>
+                    <div class="zanrovka__text">
+                        <h3 class="heading-h3">Nekonečno</h3>
+                        <div class="zanrovka__p">
+                            <p>Nekonečno. Něco, co nemá začátek ani konec. Krásným takovým příkladem jsou tramvajové koleje.</p>
+                            <p>V&nbsp;tomto případě jsem se pokusila zachytit 1&nbsp;tramvajovou kolej v&nbsp;ulici 5.&nbsp;větna, směr Lidové sady. Pohled je však k&nbsp;Šaldovu náměstí.</p>
+                            <p>Na&nbsp;této fotografii bylo jednoznačně využito kompozičního jevu sbíhání linií. Technicky je zjevné, že koleje jsou dost opotřebované, patrné jsou rýhy, znečištění a trhliny.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="paticka">
+            <p class="paticka__text">&copy; Vendula Pelantová, 2022</p>
+        </footer>
+    </main>
+    <script src="./lightGallery/dist/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('my-galerie'), {
+        selector: '.zanrovka__foto > a',
+    });
+    </script>
+</body>
+</html>

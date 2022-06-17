@@ -1,0 +1,141 @@
+.navigace{
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigace__polozka--ikon::after{
+  content:"";
+}
+.heading-h3{
+  color: var(--tx-h3);
+}
+
+/*DOMA*/
+.home{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.home__text {
+  padding-right: 1em;
+}
+
+/*SERIE*/
+.heading-h3--stred{
+  color: var(--tx-h3-mob);
+}
+.seriovka{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+.figur {
+  height: var(--height);
+  flex-basis: calc(100% / 3);
+}
+@media screen and (min-width: 965px) AND (max-width: 1355px){
+  .seriovka__fig{
+      max-width: 290px;
+      margin: 0 auto;
+  }
+  .seriovka__fig--sirka{
+    max-width: 440px;
+  }
+}
+
+/*BEST*/
+.best__p{
+  background: none;
+}
+.best{
+  background-color: var(--bg-pruh1);
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.best__foto{
+  padding: 0.5em;
+}
+
+/*ZANROVE*/
+.zanrovka__p, .zanrovka__p--fial{
+  background: none;
+  margin-bottom: 0;
+}
+.zanrovka-box{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.zanrovka{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: var(--bg-pruh1);
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  gap: 1em; 
+}
+.zanrovka--fial{
+  background-color: var(--bg-pruh2);
+  display: flex;
+}
+.zanrovka__text--fial{
+  order: 1;
+}
+.zanrovka__foto--fial{
+  order: 2;
+  flex-shrink: 0;
+}
+
+/*GALERIE*/
+.galerie__fotka {
+  flex-basis: calc(100% / 5);
+}
+
+/*O mne*/
+.obsah-oso__text{
+  background: none;
+}
+.obsah-oso{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: var(--bg-pruh2);
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+}
+.obsah-oso__obrazek{
+  margin-bottom: 0;
+  padding: 0.5em;
+}
+.kontakt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading-h3--kontakt{
+  color: var(--tx-h3-mob);
+  display: flex;
+  align-self: center;
+}
+.adresy{
+  flex-direction: row;
+  justify-content: center;
+}
+.adresy__osob{
+  border-bottom: none;
+  border-right: 3px solid var(--bg-nav);
+  padding-right: 3em;
+}
+.adresy__skol{
+  padding-left: 6em;
+}

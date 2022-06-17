@@ -1,0 +1,44 @@
+.nazev__webu{
+    text-decoration: none;
+}
+.nazev__webu:hover{
+    text-decoration: underline;
+}
+.navigace__polozka{
+    text-decoration: none;
+}
+  .navigace__polozka:hover {
+    text-decoration: underline;
+}
+
+/*GALERIE*/
+.galerie__fotka {
+    flex-basis: calc(100% / 8 - 2*2px);
+}
+
+/*SERIE*/
+.figur {
+    height: var(--height);
+    flex-basis: calc(100% / 4);
+}
+@media screen and (min-width: 1325px){
+    .seriovka__fig{
+        max-width: 290px;
+    }
+    .seriovka__fig--sirka{
+        max-width: 440px;
+    }
+
+    /*ZANROVE*/
+    .zanrovka__foto{
+        max-width: 300px;
+    }
+    .zanrovka__foto--fial{
+        max-width: 450px;
+    }
+
+    /*O mne*/
+    .obsah-oso__obrazek{
+        max-width: 320px;
+    }
+}

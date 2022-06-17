@@ -1,0 +1,78 @@
+:root {
+    --tx-nazev-a-pata-webu:#49416D;
+    --bg-nav:#B3F2DD;
+    --tx-h2:#A882DD;
+    --tx-h3-mob:rgb(224, 141, 121);
+    --tx-h3:#000000;
+    --bg-pruh1:rgba(224, 141, 121, 0.5);
+    --bg-pruh2:rgba(168, 130, 221, 0.5);
+    --tx:#000000;
+}
+/*název webu, názvy a patička*/
+@font-face{
+    font-family:"Josefin", sans-serif;
+    src: url(../pisma/Josefin_Sans/JosefinSans-VariableFont_wght.ttf) ;
+}
+/*navigace a text*/
+@font-face{
+    font-family: "Source Sans Pro", sans-serif;
+    src: url(../pisma/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+main{
+    margin: 0 auto;
+}
+.nazev__webu, .paticka__text {
+    font-family:"Josefin", sans-serif;
+    color: var(--tx-nazev-a-pata-webu);
+    text-decoration: none;
+}
+.nazev{
+    text-align: center;
+}
+.paticka__text{
+    text-align: center;
+    padding-top: 0.5em;
+}
+.paticka{
+    margin-top: 0.5em;
+}
+.heading-h2 { 
+    font-family: "Josefin Sans";
+    color: var(--tx-h2);
+    text-align: center;
+    padding: 1em 0;
+    margin: 0;
+}
+.heading-h3 {
+    font-family: "Josefin Sans";
+    color: var(--tx-h3-mob);
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: var(--tx);
+    padding: 0.25em 0.75em;
+    margin: 0 auto;
+    font-size: 16px;
+}
+figure{
+    margin: 0;
+}
+.navigace{
+    background-color: var(--bg-nav);
+    list-style-type: none;
+    margin: 0 0.25em;
+}
+.navigace__polozka{
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.7em;
+    color: var(--tx);
+}
+
+.img-responsive{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

@@ -1,0 +1,178 @@
+.nazev__webu{
+    text-decoration: underline;
+}
+.navigace{
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.navigace__polozka--ikon{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em;
+}
+.navigace__polozka--ikon::after{
+    content: url(../ikony/photo_camera_FILL0_wght400_GRAD0_opsz48\ 1.svg);
+    vertical-align: middle;
+}
+.navigace__polozka{
+    text-decoration: underline;
+    margin-left: 1em;
+}
+
+/*DOMA*/
+.home__obr{
+    padding: 1em;
+}
+@media screen and (min-width: 730px) AND (max-width: 965px){
+    .home__obr{
+        max-width: 690px;
+        margin: 0 auto;
+    }
+}
+.home__text{
+    margin-top: 0.5em;
+    padding-right: 0.5em;
+}
+
+/*SERIE*/
+.heading-h3--stred{
+    display: flex;
+    justify-content: center;
+}
+.popis-serie{
+    border-bottom: 10px solid var(--bg-pruh2);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.figur{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.figur__popis{
+    color: var(--tx-h3-mob);
+    font-size: 1.15em;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+}
+@media screen and (min-width: 450px) AND (max-width: 965px){
+    .seriovka__fig{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .seriovka__fig--sirka{
+        max-width: 440px;
+    }
+}
+
+/*BEST OF*/
+.heading-h3{
+    text-align: left;
+    padding-left: 0.75em;
+}
+.best__p{
+    background-color: var(--bg-pruh1);
+}
+@media screen and (min-width: 450px) AND (max-width: 965px){
+    .best__foto{
+        max-width: 420px;
+        margin: 0 auto;
+    }
+}
+
+/*ZANROVE*/
+.zanrovka__p{
+    background-color: var(--bg-pruh1);
+    margin-bottom: 1em;
+}
+.zanrovka__p--fial{
+    background-color: var(--bg-pruh2);
+}
+@media screen and (min-width: 450px) AND (max-width: 965px){
+    .zanrovka__foto{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 500px) AND (max-width: 965px){
+    .zanrovka__foto--fial{
+        max-width: 490px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 400px) AND (max-width: 965px){
+    .zanrovka__foto--mal{
+        max-width: 390px;
+        margin: 0 auto;
+    }
+}
+
+/*GALERIE*/
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
+.galerie__fotka {
+    flex-basis: calc(100% / 3);
+}
+@media screen and (min-width: 328px) AND (max-width: 508px){
+    .galerie__fotka{
+        min-width: 160px;
+    }
+}
+
+/*O mne*/
+@media screen and (min-width: 370px) AND (max-width: 965px){
+    .obsah-oso__obrazek{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+.obsah-oso__obrazek{
+    margin-bottom: 1em;
+}
+.obsah-oso__text{
+    background-color: var(--bg-pruh2);
+}
+.adresy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adresy__osob{
+    border-bottom: 3px solid var(--bg-nav);
+    color: var(--tx);
+    padding-bottom: 1em;
+}
+.adresy__osob *, .adresy__skol *{
+    text-decoration: none;
+    color: var(--tx);
+}
+.adresy__osob, .adresy__skol{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+.adresy__mail::before{
+    content: url(../ikony/mail_FILL0_wght400_GRAD0_opsz48\ 1ik_posta.svg);
+    vertical-align: middle;
+    margin-right: 1em;
+}
+.adresy__ig::before{
+    content: url(../ikony/images\ 2ik_instagram.svg);
+    vertical-align: middle;
+    margin-right: 1em;
+}
+.adresy__web::before{
+    content: url(../ikony/computer_FILL0_wght400_GRAD0_opsz48\ 1ik-Pocitac.svg);
+    vertical-align: middle;
+    margin-right: 1em;
+}
